@@ -151,8 +151,6 @@ function! xmodes#Presentation_mode_off()
     unmap <SPACE>
     noremap <SPACE> i <Esc>
     unmap <BACKSPACE>
-    unmap RR
-    unmap VV
     unmap OO
     unmap EE
     unmap !!
