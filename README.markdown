@@ -70,10 +70,10 @@ Usage
 
 Mappings can be redefined by setting:
 
-    let g:x_modes_map_default      = '&lt;Leader&gt;D'
-    let g:x_modes_map_development  = '&lt;Leader&gt;d'
-    let g:x_modes_map_write        = '&lt;Leader&gt;w'
-    let g:x_modes_map_presentation = '&lt;Leader&gt;p'
+    let g:x_modes_map_default      = '<Leader>D'
+    let g:x_modes_map_development  = '<Leader>d'
+    let g:x_modes_map_write        = '<Leader>w'
+    let g:x_modes_map_presentation = '<Leader>p'
 
 License
 -------
