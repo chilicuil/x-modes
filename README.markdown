@@ -4,10 +4,10 @@ Preview
 -------
 
 <p align="center">
-  <img src="http://javier.io/assets/img/x-modes-default.png"/><br>
-  <img src="http://javier.io/assets/img/x-modes-dev.png"/><br>
-  <img src="http://javier.io/assets/img/x-modes-word.png"/><br>
-  <img src="http://javier.io/assets/img/x-modes-presentation.png"/><br>
+  <img src="http://javier.io/assets/img/x-modes-default.jpg"/><br>
+  <img src="http://javier.io/assets/img/x-modes-dev.jpg"/><br>
+  <img src="http://javier.io/assets/img/x-modes-word.jpg"/><br>
+  <img src="http://javier.io/assets/img/x-modes-presentation.jpg"/><br>
 </p>
 
 Requirements
@@ -49,7 +49,7 @@ Usage
  - default (&lt;Leader&gt;D)
  - development (&lt;Leader&gt;d)
  - write (&lt;Leader&gt;w)
- - presentation (&lt;Leader&gt;w)
+ - presentation (&lt;Leader&gt;p)
 
 * Default
 
