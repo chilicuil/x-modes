@@ -65,6 +65,8 @@ endfunction
 
 function! xmodes#Write_mode_off()
     set nolinebreak
+    set textwidth=0
+    set wrapmargin=0
     unmap <F4>
     unmap <F3>
     iunmap <F4>
