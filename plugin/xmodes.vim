@@ -12,7 +12,7 @@ endif
 let g:loaded_x_modes = 1
 
 if v:version < '700'
-  echoerr "X-modes unavailable: requires Vim 7.0+"
+  echoerr "x-modes unavailable: requires Vim 7.0+"
   finish
 endif
 
@@ -39,7 +39,23 @@ command! XDevelopmentMode  call xmodes#Development_mode()
 command! XWriteMode        call xmodes#Write_mode()
 command! XPresentationMode call xmodes#Presentation_mode()
 
-exe "nnoremap <silent>" g:x_modes_map_default      ":XDefaultMode<CR>"
-exe "nnoremap <silent>" g:x_modes_map_development  ":XDevelopmentMode<CR>"
-exe "nnoremap <silent>" g:x_modes_map_write        ":XWriteMode<CR>"
-exe "nnoremap <silent>" g:x_modes_map_presentation ":XPresentationMode<CR>"
+if !hasmapto('<Plug>XDefaultMode')
+    exe "map <unique> " . g:x_modes_map_default . " <Plug>XDefaultMode"
+endif
+
+if !hasmapto('<Plug>XDevelopmentMode')
+    exe "map <unique> " . g:x_modes_map_development . " <Plug>XDevelopmentMode"
+endif
+
+if !hasmapto('<Plug>XWriteMode')
+    exe "map <unique> " . g:x_modes_map_write . " <Plug>XWriteMode"
+endif
+
+if !hasmapto('<Plug>XPresentationMode')
+    exe "map <unique> " . g:x_modes_map_presentation . " <Plug>XPresentationMode"
+endif
+
+nnoremap <unique> <script> <Plug>XDefaultMode      :XDefaultMode<CR>
+nnoremap <unique> <script> <Plug>XDevelopmentMode  :XDevelopmentMode<CR>
+nnoremap <unique> <script> <Plug>XWriteMode        :XWriteMode<CR>
+nnoremap <unique> <script> <Plug>XPresentationMode :XPresentationMode<CR>
