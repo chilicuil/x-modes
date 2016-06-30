@@ -74,8 +74,3 @@ Mappings can be redefined by setting:
     let g:x_modes_map_development  = '<Leader>d'
     let g:x_modes_map_write        = '<Leader>w'
     let g:x_modes_map_presentation = '<Leader>p'
-
-License
--------
-
-© 2014 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/

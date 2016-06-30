@@ -6,11 +6,10 @@ CONTENTS                                                        *XmodesContents*
     1. Intro ........................... |XmodesIntro|
     2. Usage ........................... |XmodesUsage|
     3. Configuration ................... |XmodesConfig|
-    4. License ......................... |XmodesLicense|
-    5. Bugs ............................ |XmodesBugs|
-    6. Contributing .................... |XmodesContributing|
-    7. Changelog ....................... |XmodesChangelog|
-    8. Credits ......................... |XmodesCredits|
+    4. Bugs ............................ |XmodesBugs|
+    5. Contributing .................... |XmodesContributing|
+    6. Changelog ....................... |XmodesChangelog|
+    7. Credits ......................... |XmodesCredits|
 
 ==============================================================================
 INTRO                                                              *XmodesIntro*
@@ -55,11 +54,6 @@ g:x_modes_map_presentation                         *XmodesConfigMapPresentation*
     Use this option to configure the mapping assigned to presenttation mode. >
         let g:x_modes_map_presentation = '<Leader>p'
 <
-==============================================================================
-LICENSE                                                          *XmodesLicense*
-
-WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
-
 ==============================================================================
 BUGS                                                                *XmodesBugs*
 

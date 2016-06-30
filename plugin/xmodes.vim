@@ -2,7 +2,6 @@
 " File:        x-modes.vim
 " Description: vim global plugin for setting modes in vim
 " Maintainer:  Javier Lopez <m@javier.io>
-" License:     WTFPL -- look it up.
 " ============================================================================
 
 " Init {{{1
