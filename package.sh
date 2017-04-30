@@ -1,3 +1,3 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
-zip -r x-modes.zip autoload/ doc/ plugin/ README.markdown
+zip -r x-modes.vim.zip autoload/ doc/ plugin/ README.markdown

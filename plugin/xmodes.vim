@@ -11,7 +11,7 @@ endif
 let g:loaded_x_modes = 1
 
 if v:version < '700'
-  echoerr "x-modes unavailable: requires Vim 7.0+"
+  echoerr "x-modes.vim requires Vim 7.0+"
   finish
 endif
 

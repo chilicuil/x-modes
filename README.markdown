@@ -1,4 +1,4 @@
-[X-modes](https://github.com/chilicuil/x-modes) is a global plugin who set preferences according to they way I use [vim](http://vim.org). It sets highly opinionated settings. Probably not something you would like to use.
+[x-modes.vim](https://github.com/chilicuil/x-modes.vim) is a global plugin who set preferences according to they way I use [vim](http://vim.org). It sets highly opinionated settings. Probably not something you would like to use.
 
 Preview
 -------
@@ -22,7 +22,7 @@ Installation
 
 - [Vundle](https://github.com/gmarik/vundle) way (recommended), add the following to your $HOME/.vimrc file:
 
-        Bundle 'chilicuil/x-modes'
+        Bundle 'chilicuil/x-modes.vim'
 
     And run inside of vim:
 
@@ -30,12 +30,12 @@ Installation
 
 - [Pathogen](https://github.com/tpope/vim-pathogen) way:
 
-        $ git clone https://github.com/chilicuil/x-modes.git ~/.vim/bundle/x-modes
+        $ git clone https://github.com/chilicuil/x-modes.vim.git ~/.vim/bundle/x-modes.vim
 
 - **Manual** (simplest if you've never heard of vundle or pathogen), download the zip file generated from github and extract it to $HOME/.vim
 
-        mv x-modes*.zip $HOME/.vim
-        cd $HOME/.vim && unzip x-modes*.zip
+        mv x-modes.vim*.zip $HOME/.vim
+        cd $HOME/.vim && unzip x-modes.vim*.zip
 
     Update the help tags from vim:
 
@@ -44,7 +44,7 @@ Installation
 Usage
 -----
 
-[X-modes](https://github.com/chilicuil/x-modes) define the following modes:
+[x-modes.vim](https://github.com/chilicuil/x-modes.vim) define the following modes:
 
  - default (&lt;Leader&gt;D)
  - development (&lt;Leader&gt;d)
