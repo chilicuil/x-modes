@@ -126,38 +126,48 @@ function! xmodes#Presentation_mode()
 endfunction
 
 function! xmodes#Presentation_mode_on()
-    "this .vimrc config was created firstly by Vroom-0.23
-    set nocursorline         "highlight the screen line of the cursor
+    let l:is_vlide_installed = split(globpath(&runtimepath, "bundle/vlide.vim/plugin/vlide.vim"))
+    if  !empty(l:is_vlide_installed)
+        Vlide
+    else
+        "this .vimrc config was created firstly by Vroom-0.23
+        set nocursorline         "highlight the screen line of the cursor
 
-    map <SPACE> :n<CR>:<CR>
-    map <BACKSPACE> :N<CR>:<CR>
-    map OO :!open <cWORD><CR><CR>
-    map EE :e <cWORD><CR>
-    map !! G:!open <cWORD><CR><CR>
-    map ?? :e .help<CR>
-    let g:old_statusline=&statusline
+        map <SPACE> :n<CR>:<CR>
+        map <BACKSPACE> :N<CR>:<CR>
+        map OO :!open <cWORD><CR><CR>
+        map EE :e <cWORD><CR>
+        map !! G:!open <cWORD><CR><CR>
+        map ?? :e .help<CR>
+        let g:old_statusline=&statusline
 
-    set statusline=
-    set statusline+=%2*%-.50f\                               "file name (!full)
-    set statusline+=%*\ \ \ Press\ \<Space\>\ or\ \<Backspace\>\ to\ continue
-    set statusline+=%h%1*%m%r%w%0*                           "flags
-    set statusline+=%=                                       "right align
-    set statusline+=%2*%-8{strftime('%H:%M')}                "time
+        set statusline=
+        set statusline+=%2*%-.50f\                               "file name (!full)
+        set statusline+=%*\ \ \ Press\ \<Space\>\ or\ \<Backspace\>\ to\ continue
+        set statusline+=%h%1*%m%r%w%0*                           "flags
+        set statusline+=%=                                       "right align
+        set statusline+=%2*%-8{strftime('%H:%M')}                "time
 
-    redraw!
+        "redraw!
+    endif
 endf
 
 function! xmodes#Presentation_mode_off()
-    set cursorline         "highlight the screen line of the cursor
-    unmap <SPACE>
-    noremap <SPACE> i <Esc>
-    unmap <BACKSPACE>
-    unmap OO
-    unmap EE
-    unmap !!
-    unmap ??
-    let &statusline=g:old_statusline
-    redraw!
+    let l:is_vlide_installed = split(globpath(&runtimepath, "bundle/vlide.vim/plugin/vlide.vim"))
+    if  !empty(l:is_vlide_installed)
+        VlideExit
+    else
+        set cursorline         "highlight the screen line of the cursor
+        unmap <SPACE>
+        noremap <SPACE> i <Esc>
+        unmap <BACKSPACE>
+        unmap OO
+        unmap EE
+        unmap !!
+        unmap ??
+        let &statusline=g:old_statusline
+        "redraw!
+    endif
 endf
 
 function! xmodes#Default_mode()
